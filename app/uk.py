@@ -23,7 +23,7 @@ VALID_DISTRICT_LETTER = {
 INVALID_LETTERS_IN_UNIT = set(list('CIKMOV'))
 
 CUSTOM_AREA_VALIDATIONS = dict(
-    AB=lambda district, *_: len(district) and district.isdigit()
+    AB=lambda district, *_: len(district) == 2 and district.isdigit()
 )
 
 
