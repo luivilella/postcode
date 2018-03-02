@@ -22,10 +22,6 @@ VALID_DISTRICT_LETTER = {
 }
 INVALID_LETTERS_IN_UNIT = set(list('CIKMOV'))
 
-CUSTOM_AREA_VALIDATIONS = dict(
-    AB=lambda district, *_: len(district) == 2 and district.isdigit()
-)
-
 
 def is_valid_uk_postcode(postcode: str) -> bool:
     """Function to validade UK postcodes"""
@@ -102,10 +98,6 @@ def is_valid_uk_postcode(postcode: str) -> bool:
         so as not to resemble digits or each other when hand-written.
     """
     if set(list(unit)) & INVALID_LETTERS_IN_UNIT:
-        return False
-
-    custom_check = CUSTOM_AREA_VALIDATIONS.get(area)
-    if callable(custom_check) and not custom_check(district, sector, unit):
         return False
 
     return True
