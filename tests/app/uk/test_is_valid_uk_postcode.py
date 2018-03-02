@@ -1,4 +1,4 @@
-from app.uk import is_valid_uk_postcode
+from postcode.uk import is_valid_uk_postcode
 
 
 class TestIsValidUKPostcode:

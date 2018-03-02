@@ -1,5 +1,5 @@
 import pytest
-from app.uk import format_uk_postcode, InvalidUKPostcode
+from postcode.uk import format_uk_postcode, InvalidUKPostcode
 
 
 class TestFormatUKPostcode:
