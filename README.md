@@ -27,15 +27,15 @@ You can use as a library or you can deploy and have an web api to validate your 
 ## Running tests
 
     $ pytest
-    ========================================================= test session starts =========================================================
+    ======================== test session starts ========================
     platform linux -- Python 3.6.4, pytest-3.4.1, py-1.5.2, pluggy-0.6.0
     rootdir: /deploy, inifile:
     collected 17 items
 
-    tests/app/uk/test_format_uk_postcode.py ....                                                                                    [ 23%]
-    tests/app/uk/test_is_valid_uk_postcode.py .............                                                                         [100%]
+    tests/postcode/uk/test_format_uk_postcode.py ....             [ 23%]
+    tests/postcode/uk/test_is_valid_uk_postcode.py .............  [100%]
 
-    ====================================================== 17 passed in 0.70 seconds ======================================================
+    ===================== 17 passed in 2.56 seconds =====================
 
 ## Deploying the web API
 
