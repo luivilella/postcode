@@ -1,0 +1,7 @@
+**/*.pytest_cache
+**/*.DS_Store
+**/*.swp
+**/**/*.pyc
+**/**/*__pycache__
+**/**/*.egg-info
+nginx.conf
